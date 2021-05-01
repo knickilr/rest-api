@@ -5,10 +5,10 @@ const student = require('../schema/student')
 
 
 router.get('/students', function(req, res){
-    student.find().then(function(students){
-        res.send(students)
-    })
-    // res.send('This is from get')
+    // student.find().then(function(students){
+    //     res.send(students)
+    // })
+    res.send('This is from get')
 })
 
 router.post('/students', function(req, res){
